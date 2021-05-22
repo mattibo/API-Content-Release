@@ -16,9 +16,10 @@ chlog_file.new_header(level=3, title="Gelöscht")
 services_removed = ["XYZ"]
 chlog_file.new_list(services_removed)
 
+chlog_file.new_header(level=3, title="Modifiziert")
 services_modified = ["Service-ID", "Attribut", "Alter Wert", "Neuer Wert"]
 services_modified.extend(["1", "name", "ABC", "DEF"])
-chlog_file.new_table(columns=4, rows=2, text=services_modified, text_align='center')
+chlog_file.new_table(columns=4, rows=2, text=services_modified, text_align="left")
 
 chlog_file.create_md_file()
 
